@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+	padding: 0;
+	margin: 0;
+	color:#fff;
+	box-sizing: border-box;
+}
+html{
+	font-size:10px;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+    background: url('img/bg.gif') no-repeat center center fixed;
+	background-size: cover;
+	/* background-color: rgb(24, 38, 119); */
+	color:#fff;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+
+
+ body::before{
+	content: "";
+	position: absolute;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-image: radial-gradient(rgb(133, 39, 39), rgb(32, 58, 107));
+	opacity: .6;
+}
+
+
+main{
+	position: relative;
+}
+
+h1{
+	font-size: 2.2rem;
+	padding: 10px;
+}
+
+.bee__image{
+	background: url('bee.png');
+	width: 216px;
+	height: 192px;
+	background-size: cover;
+	flex-basis: 100%;
+	margin: 100px auto;
+}
+
+.name{
+	font-size: 4rem;
+	margin-bottom: 50px;
+}
+
+button{
+	border: 3px solid rgb(18, 8, 56);
+	background-color: rgb(52, 69, 165);
+	font-size: 3rem;
+	transition: .5s;
+	cursor: pointer;
+	padding: 10px;
+}
+
+button:hover{
+	background: transparent;
+}
